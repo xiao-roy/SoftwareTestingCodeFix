@@ -6,7 +6,9 @@ jobs:
     steps:
       - checkout
       - run: make
-
+      - run: make clean
+      - run: ./tests/create_user.test.sh
+      - run: ./tests/delete_user.test.sh
 workflows:
   version: 2
   build_and_test:
