@@ -291,6 +291,7 @@ struct Menu {
 			clearBuffer();
 			getline(cin, searchQuery);
 			searchResult = classroom.searchStudent(searchQuery, classroom.NAME);
+			break;
 		case 'i':
 			cout << "Enter ID: ";
 			cin >> searchQuery;
