@@ -354,7 +354,6 @@ struct Menu {
 			switch (field)
 			{
 			case 'n':
-			switchLabel:
 				cout << "Enter first name: ";
 				validateInputStrings_addStudentCLI(fname, "first name", 40);
 				cout << "Enter last name: ";
@@ -362,7 +361,6 @@ struct Menu {
 				searchResult.first->fname = fname;
 				searchResult.first->lname = lname;
 				searchResult.first->name = fname + " " + lname;
-				goto switchLabel;
 				break;
 			case 'u':
 				cout << "Enter UID: ";
