@@ -22,16 +22,31 @@ struct StudentType {
 
 	// Student constructor
 	template <class U = T, typename enable_if<is_same<U, vector<unsigned short>>::value>::type* = nullptr>
-	StudentType(std::string _fname, std::string _lname, std::string _uid, std::string _email,
-		double g_presentation, double g_essay, double g_term_project, bool valid)
+	StudentType(
+		std::string _fname, 
+		std::string _lname, 
+		std::string _uid, 
+		std::string _email,
+		double g_presentation, 
+		double g_essay, 
+		double g_term_project, 
+		bool valid
+	)
 		: fname(_fname), lname(_lname), name(_fname + " " + _lname), email(_email), uid(_uid),
 		grade_presentation(g_presentation), grade_essay(g_essay),
 		grade_term_project(g_term_project) {}
 
 	template <class U = T, typename enable_if<!is_same<U, vector<unsigned short>>::value>::type* = nullptr>
-	StudentType(std::string _fname, std::string _lname, std::string _uid, std::string _email,
-		double g_presentation, double g_essay, double g_term_project)
-		: fname(_lname), lname(_fname), name(_lname + " " + _fname), email(_email), uid(_uid),
+	StudentType(
+		std::string _fname, 
+		std::string _lname, 
+		std::string _uid, 
+		std::string _email,
+		double g_presentation, 
+		double g_essay, 
+		double g_term_project
+	)
+		: fname(_fname), lname(_lname), name(_fname + " " + _lname), email(_email), uid(_uid),
 		grade_presentation(g_presentation), grade_essay(g_essay),
 		grade_term_project(g_term_project) {}
 
