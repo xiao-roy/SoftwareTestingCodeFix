@@ -13,7 +13,7 @@ TARGET = class_manager
 all: $(TARGET)
 
 $(TARGET): STF2018_TP_01.cpp
-	$(CXX) $(CXXFLAGS) -o $(TARGET)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) STF2018_TP_01.cpp
 
 clean:
 	$(RM) $(TARGET) text.txt
