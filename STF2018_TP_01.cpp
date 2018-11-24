@@ -289,7 +289,7 @@ struct Menu {
 		case 'n':
 			cout << "Enter name: ";
 			clearBuffer();
-			cin >> searchQuery;
+			getline(cin, searchQuery);
 			searchResult = classroom.searchStudent(searchQuery, classroom.NAME);
 		case 'i':
 			cout << "Enter ID: ";
