@@ -267,8 +267,8 @@ struct Menu {
 			cout << "Error: Student with that USF ID does not exist!\n";
 		}
 
-		else if (classroom.deleteStudent(*studentPair.first))                                                                                                                                                                     ;
-		cout << "Student deleted successfully.\n";
+		else if (classroom.deleteStudent(*studentPair.first))
+			cout << "Student deleted successfully.\n";
 		
 	}
 
