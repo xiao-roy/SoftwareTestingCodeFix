@@ -122,7 +122,7 @@ struct Classroom {
 		}
 		);
 		// output iterator and whether student was found
-		return { search, search != students.end() - 1 };
+		return { search, search != students.end() };
 	}
 };
 
