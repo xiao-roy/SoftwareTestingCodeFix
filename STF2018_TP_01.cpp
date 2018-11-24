@@ -36,7 +36,7 @@ struct StudentType {
 	// overload << operator for Student
 	friend std::ostream& operator<<(std::ostream& os, const StudentType& s)
 	{
-		os << s.uid << ' ' << s.name << ' '
+		os << s.name << ' ' << s.uid << ' '
 			<< s.email << ' ' << s.grade_presentation << ' '
 			<< s.grade_essay << ' ' << s.grade_term_project;
 		return os;
