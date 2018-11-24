@@ -286,7 +286,7 @@ struct Menu {
 
 		string searchQuery;
 		bool validOptionChosen = true;
-		std::pair<std::vector<StudentType>::iterator, bool> searchResult;
+		std::pair<std::vector<StudentType>::iterator, bool> searchResult = {{}, false};
 		// perform search based on search type
 		switch (option)
 		{
@@ -319,14 +319,11 @@ struct Menu {
 			{
 				cout << "Name, USF ID, Email, Presentation grade, Essay grade, Term Project grade\n";
 				cout << searchResult.second << endl;
-				return searchResult;
 			}
-			else
-			{
-				cout << "Error: No results found\n";
-				return searchResult;
-			}
+			else cout << "Error: No results found\n";
 		}
+
+		return searchResult;
 	}
 
 	void updateStudentCLI()
