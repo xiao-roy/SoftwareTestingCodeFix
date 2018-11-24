@@ -252,8 +252,7 @@ struct Menu {
 
 		// add student to classroom
 		StudentType s(fname, lname, uid, email, grade_presentation, grade_essay, grade_term_project);
-		if (classroom.addStudent(s));
-		cout << "Student added successfully.\n";
+		if (classroom.addStudent(s)) cout << "Student added successfully.\n";
 
 	}
 
