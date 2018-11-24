@@ -275,6 +275,7 @@ struct Menu {
 		cout << "Student deleted successfully.\n";
 		
 	}
+
 	std::pair<std::vector<StudentType>::iterator, bool> searchStudentCLI()
 	{
 		// ask user to select the search type
@@ -303,9 +304,6 @@ struct Menu {
 			cout << "Enter email: ";
 			cin >> searchQuery;
 			searchResult = classroom.searchStudent(searchQuery, classroom.EMAIL);
-			break;
-		case 'z':
-			cout << "Welcome to software testing!  Have fun!";
 			break;
 		default:
 			clearBuffer();
