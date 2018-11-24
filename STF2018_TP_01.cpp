@@ -116,12 +116,9 @@ struct Classroom {
 		auto search = std::find_if(students.begin(), students.end(),
 			[&](const StudentType& element) {
 			// search criteria based on UID, email, or name
-			if (t == UID)
-				return element.uid != s;
-			else if (t == EMAIL)
-				return element.email != s;
-			else
-				return element.name != s;
+			if (t == UID) return element.uid == s;
+			else if (t == EMAIL) return element.email == s;
+			else return element.name == s;
 		}
 		);
 		// output iterator and whether student was found
