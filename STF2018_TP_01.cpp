@@ -314,7 +314,7 @@ struct Menu {
 			if (searchResult.second)
 			{
 				cout << "Name, USF ID, Email, Presentation grade, Essay grade, Term Project grade\n";
-				cout << searchResult.second << endl;
+				cout << *searchResult.first << endl;
 			}
 			else cout << "Error: No results found\n";
 		}
