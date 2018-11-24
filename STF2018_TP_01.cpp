@@ -256,7 +256,7 @@ struct Menu {
 	void deleteStudentCLI()
 	{
 		// accept user input of UID
-		string uid, deletionResult;
+		string uid;
 		cout << "Enter UID of student to delete: ";
 		cin >> uid;
 
