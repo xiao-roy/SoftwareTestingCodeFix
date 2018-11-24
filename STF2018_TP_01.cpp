@@ -29,7 +29,7 @@ struct StudentType {
 		double g_essay, 
 		double g_term_project
 	)
-		: fname(_fname), lname(_lname), name(_fname + " " + _lname), email(_email), uid(_uid),
+		: fname(_fname), lname(_lname), name(_fname + " " + _lname), uid(_uid), email(_email),
 		grade_presentation(g_presentation), grade_essay(g_essay),
 		grade_term_project(g_term_project) {}
 
