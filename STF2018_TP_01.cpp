@@ -337,7 +337,6 @@ struct Menu {
 				<< "p: presentation grade\n"
 				<< "e: essay grade\n"
 				<< "t: term project grade\n"
-				<< "c: final grade\n"
 				<< "Enter option: ";
 			field = getchar();
 
