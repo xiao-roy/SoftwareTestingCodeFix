@@ -294,12 +294,14 @@ struct Menu {
 			break;
 		case 'i':
 			cout << "Enter ID: ";
-			cin >> searchQuery;
+			clearBuffer();
+			getline(cin, searchQuery);
 			searchResult = classroom.searchStudent(searchQuery, classroom.UID);
 			break;
 		case 'e':
 			cout << "Enter email: ";
-			cin >> searchQuery;
+			clearBuffer();
+			getline(cin, searchQuery);
 			searchResult = classroom.searchStudent(searchQuery, classroom.EMAIL);
 			break;
 		default:
